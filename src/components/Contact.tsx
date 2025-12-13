@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, Phone, Globe } from 'lucide-react';
 import { Button } from './Button';
 
 export const Contact: React.FC = () => {
@@ -12,7 +12,7 @@ export const Contact: React.FC = () => {
             <div>
               <h2 className="font-heading text-4xl font-bold mb-6">Let's Connect</h2>
               <p className="text-gray-400 leading-relaxed">
-                Discuss your facility management needs with our team of experts. We provide tailored audits and proposal within 48 hours.
+                Discuss your facility management needs with our team of experts. We provide tailored audits and proposals within 48 hours.
               </p>
             </div>
 
@@ -21,7 +21,7 @@ export const Contact: React.FC = () => {
                 <Phone className="text-primary" size={24} />
                 <div>
                   <p className="text-xs text-gray-500 uppercase tracking-wider">Phone</p>
-                  <p className="text-lg font-medium">+44 (0) 20 7123 4567</p>
+                  <p className="text-lg font-medium">+44 (0) 7XXX XXX XXX</p>
                 </div>
               </div>
               
@@ -34,10 +34,10 @@ export const Contact: React.FC = () => {
               </div>
 
               <div className="flex items-center gap-4">
-                <MapPin className="text-primary" size={24} />
+                <Globe className="text-primary" size={24} />
                 <div>
-                  <p className="text-xs text-gray-500 uppercase tracking-wider">Headquarters</p>
-                  <p className="text-lg font-medium">One Canada Square, Canary Wharf<br/>London, E14 5AB</p>
+                  <p className="text-xs text-gray-500 uppercase tracking-wider">Service Area</p>
+                  <p className="text-lg font-medium">Serving clients across the UK</p>
                 </div>
               </div>
             </div>
