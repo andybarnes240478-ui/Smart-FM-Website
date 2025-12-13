@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, Globe } from 'lucide-react';
+import { Mail, Phone, Globe, Linkedin } from 'lucide-react';
 import { Button } from './Button';
 
 export const Contact: React.FC = () => {
@@ -21,7 +21,7 @@ export const Contact: React.FC = () => {
                 <Phone className="text-primary" size={24} />
                 <div>
                   <p className="text-xs text-gray-500 uppercase tracking-wider">Phone</p>
-                  <p className="text-lg font-medium">+44 (0) 7XXX XXX XXX</p>
+                  <p className="text-lg font-medium">+44 (0) 7435 146 951</p>
                 </div>
               </div>
               
@@ -40,6 +40,14 @@ export const Contact: React.FC = () => {
                   <p className="text-lg font-medium">Serving clients across the UK</p>
                 </div>
               </div>
+
+              <a href="https://www.linkedin.com/company/smartech-fm" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
+                <Linkedin className="text-primary" size={24} />
+                <div>
+                  <p className="text-xs text-gray-500 uppercase tracking-wider">LinkedIn</p>
+                  <p className="text-lg font-medium group-hover:text-primary transition-colors">Follow Smartech FM</p>
+                </div>
+              </a>
             </div>
           </div>
 
