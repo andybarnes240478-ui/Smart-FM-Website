@@ -10,12 +10,12 @@ const services = [
   {
     title: "Technical Maintenance",
     description: "Proactive electrical, mechanical, and structural engineering.",
-    image: "https://images.unsplash.com/photo-1581094794329-cd56b5095bb4?q=80&w=800&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=800&auto=format&fit=crop"
   },
   {
     title: "Security Solutions",
     description: "Advanced surveillance and access control for total peace of mind.",
-    image: "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?q=80&w=800&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1558002038-1055907df827?q=80&w=800&auto=format&fit=crop"
   },
   {
     title: "Energy Efficiency",
@@ -25,7 +25,7 @@ const services = [
   {
     title: "Cleaning Services",
     description: "High-standard hygiene maintenance for corporate environments.",
-    image: "https://images.unsplash.com/photo-1584622050111-993a426fbf0a?q=80&w=800&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?q=80&w=800&auto=format&fit=crop"
   },
 ];
 
