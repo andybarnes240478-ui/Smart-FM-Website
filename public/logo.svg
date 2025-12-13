@@ -1,0 +1,21 @@
+<svg width="260" height="50" viewBox="0 0 260 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&amp;family=Poppins:wght@700&amp;display=swap');
+    text { font-family: 'Poppins', 'Inter', sans-serif; }
+  </style>
+  
+  <!-- Icon Container: 40x40 Green Square -->
+  <rect width="40" height="40" fill="#059669"/>
+  
+  <!-- Icon Mark: Centered (offset 8,8) -->
+  <g transform="translate(8, 8)">
+    <path d="M4 4H12V12H4V4Z" fill="white" />
+    <path d="M14 4H20V10H14V4Z" fill="white" fill-opacity="0.7" />
+    <path d="M14 12H20V20H14V12Z" fill="white" />
+    <path d="M4 14H12V20H4V14Z" fill="white" fill-opacity="0.4" />
+  </g>
+
+  <!-- Text -->
+  <text x="52" y="24" fill="#111827" font-weight="bold" font-size="20" letter-spacing="-0.025em">SMARTECH FM</text>
+  <text x="52" y="38" fill="#059669" font-family="'Inter', sans-serif" font-weight="bold" font-size="10" letter-spacing="0.2em">INTELLIGENT SOLUTIONS</text>
+</svg>
