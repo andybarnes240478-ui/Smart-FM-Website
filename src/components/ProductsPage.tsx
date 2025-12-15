@@ -2,7 +2,6 @@ import React from 'react';
 import {
   Smartphone,
   ShieldCheck,
-  FileText,
   Calculator,
   RefreshCw,
   CheckCircle
@@ -70,14 +69,26 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onNavigate }) => {
             </Button>
           </div>
 
-          <div className="bg-charcoal h-80 rounded-xl shadow-xl" />
+          <div className="bg-charcoal h-80 rounded-xl shadow-xl flex items-center justify-center">
+            <div className="text-center">
+              <Smartphone className="text-primary mx-auto mb-4" size={48} strokeWidth={1} />
+              <p className="text-white font-heading font-bold text-lg">COMING SOON</p>
+              <p className="text-primary text-sm tracking-widest uppercase">Smartech Field Services</p>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* CONTROL PACK */}
       <section className="py-24 bg-lightgray">
         <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
-          <div className="bg-charcoal h-80 rounded-xl shadow-xl order-last lg:order-first" />
+          <div className="bg-charcoal h-80 rounded-xl shadow-xl flex items-center justify-center order-last lg:order-first">
+            <div className="text-center">
+              <ShieldCheck className="text-primary mx-auto mb-4" size={48} strokeWidth={1} />
+              <p className="text-white font-heading font-bold text-lg">COMING SOON</p>
+              <p className="text-primary text-sm tracking-widest uppercase">Inspection & Evidence</p>
+            </div>
+          </div>
 
           <div className="space-y-6">
             <div className="flex items-center gap-4">
@@ -128,9 +139,14 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onNavigate }) => {
           <div className="space-y-6">
             <div className="flex items-center gap-4">
               <Calculator className="text-primary" size={36} />
-              <h2 className="font-heading text-4xl font-bold text-charcoal">
-                Smartech Quoter
-              </h2>
+              <div>
+                <h4 className="uppercase text-primary text-sm font-bold tracking-widest">
+                  Commercial Control
+                </h4>
+                <h2 className="font-heading text-4xl font-bold text-charcoal">
+                  Smartech Quoter
+                </h2>
+              </div>
             </div>
 
             <p className="text-gray-600 text-lg">
@@ -138,33 +154,89 @@ export const ProductsPage: React.FC<ProductsPageProps> = ({ onNavigate }) => {
               Control margins, approvals, and scope — then generate work orders automatically.
             </p>
 
+            <ul className="grid sm:grid-cols-2 gap-4">
+              {[
+                'Rate card management',
+                'Margin & markup control',
+                'Approval workflows',
+                'Auto work order generation'
+              ].map(item => (
+                <li key={item} className="flex items-center gap-3">
+                  <CheckCircle className="text-primary" size={18} />
+                  <span className="text-sm font-medium text-charcoal">{item}</span>
+                </li>
+              ))}
+            </ul>
+
             <Button variant="outline" onClick={() => onNavigate('home', 'contact')}>
               Add Quoter
             </Button>
           </div>
 
-          <div className="bg-charcoal h-72 rounded-xl shadow-xl" />
+          <div className="bg-charcoal h-80 rounded-xl shadow-xl flex items-center justify-center">
+            <div className="text-center">
+              <Calculator className="text-primary mx-auto mb-4" size={48} strokeWidth={1} />
+              <p className="text-white font-heading font-bold text-lg">COMING SOON</p>
+              <p className="text-primary text-sm tracking-widest uppercase">Smartech Quoter</p>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* LIFECYCLE */}
-      <section className="py-24 bg-charcoal text-white text-center">
-        <div className="container mx-auto px-6 max-w-3xl space-y-6">
-          <RefreshCw className="text-primary mx-auto" size={40} />
-          <h2 className="font-heading text-4xl font-bold">
-            Smartech Lifecycle
-          </h2>
-          <p className="text-gray-400 text-lg">
-            Use real inspection, defect, and work data to forecast asset replacement,
-            plan capital spend, and optimise long-term risk.
-          </p>
+      <section className="py-24 bg-lightgray">
+        <div className="container mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+          <div className="bg-charcoal h-80 rounded-xl shadow-xl flex items-center justify-center order-last lg:order-first">
+            <div className="text-center">
+              <RefreshCw className="text-primary mx-auto mb-4" size={48} strokeWidth={1} />
+              <p className="text-white font-heading font-bold text-lg">COMING SOON</p>
+              <p className="text-primary text-sm tracking-widest uppercase">Smartech Lifecycle</p>
+            </div>
+          </div>
 
-          <Button onClick={() => onNavigate('home', 'contact')}>
-            Explore Lifecycle (Enterprise)
-          </Button>
+          <div className="space-y-6">
+            <div className="flex items-center gap-4">
+              <RefreshCw className="text-primary" size={36} />
+              <div>
+                <h4 className="uppercase text-primary text-sm font-bold tracking-widest">
+                  Strategic Asset Planning
+                </h4>
+                <h2 className="font-heading text-4xl font-bold text-charcoal">
+                  Smartech Lifecycle
+                </h2>
+              </div>
+            </div>
+
+            <p className="text-gray-600 text-lg">
+              Your single source of truth for asset management — from collection and validation 
+              through condition reporting to full lifecycle planning and capital forecasting.
+            </p>
+
+            <ul className="grid sm:grid-cols-2 gap-4">
+              {[
+                'Asset collection & validation',
+                'Condition-based reporting',
+                '10-year CapEx forecasting',
+                'NRM3 aligned outputs'
+              ].map(item => (
+                <li key={item} className="flex items-center gap-3">
+                  <CheckCircle className="text-primary" size={18} />
+                  <span className="text-sm font-medium text-charcoal">{item}</span>
+                </li>
+              ))}
+            </ul>
+
+            <p className="text-sm text-gray-500 italic">
+              Best with Smartech Field Services data
+            </p>
+
+            <Button variant="outline" onClick={() => onNavigate('home', 'contact')}>
+              Explore Lifecycle
+            </Button>
+          </div>
         </div>
       </section>
+
     </div>
   );
 };
-
