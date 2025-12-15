@@ -48,7 +48,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <button onClick={() => onNavigate('home', 'home')} className="hover:opacity-90 transition-opacity">
-          <Logo lightMode={true} />
+        <Logo lightMode={!isScrolled} />
         </button>
 
         <div className="hidden md:flex items-center gap-10">
