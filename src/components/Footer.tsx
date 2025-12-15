@@ -60,9 +60,9 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           <div>
             <h4 className="font-bold text-charcoal mb-6">Legal</h4>
             <ul className="space-y-3 text-sm text-gray-500">
-              <li><a href="#" className="hover:text-primary transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Terms of Service</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Cookie Policy</a></li>
+              <li><button onClick={() => onNavigate('privacy')} className="hover:text-primary transition-colors">Privacy Policy</button></li>
+              <li><button onClick={() => onNavigate('terms')} className="hover:text-primary transition-colors">Terms of Service</button></li>
+              <li><button onClick={() => onNavigate('cookies')} className="hover:text-primary transition-colors">Cookie Policy</button></li>
             </ul>
           </div>
 

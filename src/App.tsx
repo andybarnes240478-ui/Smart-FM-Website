@@ -8,6 +8,9 @@ import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { ServicesPage } from './components/ServicesPage';
 import { ProductsPage } from './components/ProductsPage';
+import { PrivacyPolicy } from './components/PrivacyPolicy';
+import { TermsOfService } from './components/TermsOfService';
+import { CookiePolicy } from './components/CookiePolicy';
 
 function App() {
   const [page, setPage] = useState('home');
@@ -54,6 +57,18 @@ function App() {
 
         {page === 'products' && (
           <ProductsPage onNavigate={handleNavigate} />
+        )}
+
+        {page === 'privacy' && (
+          <PrivacyPolicy onNavigate={handleNavigate} />
+        )}
+
+        {page === 'terms' && (
+          <TermsOfService onNavigate={handleNavigate} />
+        )}
+
+        {page === 'cookies' && (
+          <CookiePolicy onNavigate={handleNavigate} />
         )}
       </main>
 
