@@ -94,31 +94,3 @@ export const About: React.FC = () => {
     </section>
   );
 };
-```
-
----
-
-## How to Apply These Changes in VS Code
-
-1. Open VS Code with your `Smart-FM-Website` folder
-
-2. Navigate to each file in the `src` folder (likely `src/components/` or similar)
-
-3. For each file:
-   - Open the file (e.g., `Hero.tsx`)
-   - Select All (`Cmd + A`)
-   - Delete
-   - Paste the new code from above
-   - Save (`Cmd + S`)
-
-4. Once all four files are updated, open Terminal in VS Code (`Ctrl + `` `) and run:
-```
-   npm run dev
-```
-   This will start the local dev server so you can preview the changes.
-
-5. When happy, commit and push:
-```
-   git add .
-   git commit -m "Update positioning and copy"
-   git push
