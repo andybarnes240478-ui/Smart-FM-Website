@@ -41,12 +41,14 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
   return (
     <nav 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-6'
+        isScrolled 
+          ? 'bg-white shadow-md py-3' 
+          : 'bg-charcoal/90 backdrop-blur-sm py-4'
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         <button onClick={() => onNavigate('home', 'home')} className="hover:opacity-90 transition-opacity">
-          <Logo lightMode={!isScrolled} />
+          <Logo lightMode={true} />
         </button>
 
         <div className="hidden md:flex items-center gap-10">
@@ -56,7 +58,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
                 key={item.label}
                 onClick={() => handleNavClick(item)}
                 className={`font-medium transition-colors text-xs font-bold uppercase tracking-widest ${
-                  isScrolled ? 'text-charcoal hover:text-primary' : 'text-white/90 hover:text-white'
+                  isScrolled 
+                    ? 'text-charcoal hover:text-primary' 
+                    : 'text-white/90 hover:text-white'
                 }`}
               >
                 {item.label}
@@ -65,7 +69,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate }) => {
           </div>
           <Button 
             variant={isScrolled ? 'primary' : 'ghost'}
-            className={isScrolled ? '' : '!px-6 !py-2'}
+            className={isScrolled ? '' : 'border-white/30 text-white hover:bg-white/10'}
             onClick={() => onNavigate('home', 'contact')}
           >
             Request a Demo
