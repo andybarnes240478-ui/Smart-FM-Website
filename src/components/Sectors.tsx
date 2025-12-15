@@ -68,7 +68,7 @@ export const Sectors: React.FC = () => {
             </h2>
           </div>
           <p className="text-gray-400 max-w-md text-sm leading-relaxed border-l-2 border-primary pl-6">
-            Our operational frameworks are adapted to the specific regulatory and operational demands of your industry.
+            Our tools and services are built to handle the regulatory, operational, and commercial demands of your industry — wherever you operate.
           </p>
         </div>
 

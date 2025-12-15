@@ -7,6 +7,7 @@ const detailedServices = [
     icon: Database,
     title: "Asset Collection & Validation",
     tagline: "The Foundation of Truth",
+    poweredBy: "Delivered using Smartech Inspection and Evidence.",
     description: "We establish a pristine data baseline by physically verifying and tagging every maintainable asset in your portfolio. This eliminates 'ghost assets' and ensures your facility management strategy is built on 100% accurate data.",
     benefits: [
       "Regulatory compliance assurance",
@@ -19,6 +20,7 @@ const detailedServices = [
     icon: ClipboardCheck,
     title: "Asset Condition Surveys",
     tagline: "Proactive Risk Mitigation",
+    poweredBy: "Delivered using Smartech Inspection. Output available in your own instance.",
     description: "Our technical experts conduct deep-dive assessments of your MEPH (Mechanical, Electrical, Plumbing) fabric. We grade equipment based on physical condition and operational risk to identify issues before they become critical failures.",
     benefits: [
       "Identify critical failure points",
@@ -31,6 +33,7 @@ const detailedServices = [
     icon: BarChart3,
     title: "Asset Lifecycle Reporting",
     tagline: "Predictive Intelligence",
+    poweredBy: "Delivered using Smartech Lifecycle. Data yours to keep.",
     description: "We move beyond simple maintenance to predictive lifecycle modeling. By analyzing degradation curves and usage patterns, we forecast exactly when assets will require refurbishment or replacement, optimizing your Total Cost of Ownership.",
     benefits: [
       "Data-driven decision making",
@@ -43,6 +46,7 @@ const detailedServices = [
     icon: LineChart,
     title: "Capital Planning (CapEx)",
     tagline: "Strategic Financial Forecasting",
+    poweredBy: "Delivered using Smartech Lifecycle. Scenario modelling included.",
     description: "Align your asset needs with your financial reality. We provide detailed 5, 10, and 15-year expenditure plans that allow you to smooth out budget spikes and justify investment requests with irrefutable engineering data.",
     benefits: [
       "Eliminate budget shocks",
@@ -62,18 +66,18 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onNavigate }) => {
     <div className="pt-20">
       <section className="bg-charcoal text-white py-20 lg:py-32 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-1/2 h-full bg-primary/5 -skew-x-12 transform origin-top-right"></div>
-        <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-charcoal to-transparent z-10"></div>
+        <div className="absolute bottom-0 left-0 w-full h-full bg-gradient-to-t from-charcoal to-transparent z-10"></div>
         
         <div className="container mx-auto px-6 relative z-20">
           <div className="max-w-3xl">
             <div className="inline-block border border-primary/50 bg-primary/10 backdrop-blur-sm px-4 py-2 text-primary text-xs font-bold tracking-widest uppercase mb-6">
-              Core Capabilities
+              Smartech-Delivered Services
             </div>
             <h1 className="font-heading text-5xl md:text-6xl font-bold leading-tight mb-8">
               Strategic Asset <br/><span className="text-primary">Intelligence</span>
             </h1>
             <p className="text-xl text-gray-400 leading-relaxed max-w-2xl">
-              We don't just fix buildings; we digitize, analyze, and optimize them. Our data-led approach turns your physical portfolio into a predictable business advantage.
+              We don't just build the tools — we use them. Every service we deliver is powered by Smartech software, so you see the value before you commit to the platform.
             </p>
           </div>
         </div>
@@ -95,7 +99,12 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onNavigate }) => {
                       <h3 className="text-primary text-xs font-bold tracking-[0.2em] uppercase">{service.tagline}</h3>
                     </div>
 
-                    <h2 className="text-3xl font-heading font-bold text-charcoal mb-6">{service.title}</h2>
+                    <h2 className="text-3xl font-heading font-bold text-charcoal mb-4">{service.title}</h2>
+                    
+                    <p className="text-primary text-sm font-semibold mb-6 italic">
+                      {service.poweredBy}
+                    </p>
+                    
                     <p className="text-gray-600 leading-relaxed mb-8 text-lg">
                       {service.description}
                     </p>
@@ -142,16 +151,16 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onNavigate }) => {
 
       <section className="bg-white py-24 border-t border-gray-100">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="font-heading text-4xl font-bold text-charcoal mb-6">Ready to optimize your portfolio?</h2>
+          <h2 className="font-heading text-4xl font-bold text-charcoal mb-6">Ready to see the tools in action?</h2>
           <p className="text-gray-600 max-w-2xl mx-auto mb-10 text-lg">
-            Schedule a consultation with our asset management specialists to discuss your specific requirements.
+            Schedule a consultation to discuss your requirements — or let us deliver a pilot project so you can experience the platform firsthand.
           </p>
           <div className="flex justify-center gap-4">
             <Button onClick={() => onNavigate('home', 'contact')}>
               Request a Demo
             </Button>
             <Button variant="outline" onClick={() => onNavigate('home', 'contact')}>
-              Speak to an Expert
+              Discuss a Pilot Project
             </Button>
           </div>
         </div>

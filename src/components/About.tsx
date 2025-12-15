@@ -15,8 +15,8 @@ export const About: React.FC = () => {
                 className="w-full h-auto"
               />
               <div className="absolute bottom-0 left-0 bg-charcoal text-white p-6 md:p-8 max-w-sm backdrop-blur-md bg-opacity-95">
-                <p className="font-heading font-bold text-xl mb-2">"We are here to disrupt the normal."</p>
-                <p className="text-gray-400 text-sm">Providing transparency and accountability to all aspects of FM.</p>
+                <p className="font-heading font-bold text-xl mb-2">"Built by FM professionals."</p>
+                <p className="text-gray-400 text-sm">The tools we wished we'd had — now yours.</p>
               </div>
             </div>
           </div>
@@ -24,19 +24,22 @@ export const About: React.FC = () => {
           <div className="w-full lg:w-1/2 lg:pl-6">
             <h4 className="text-primary font-bold tracking-widest uppercase text-sm mb-4 flex items-center gap-2">
               <span className="w-8 h-0.5 bg-primary"></span>
-              Industry Evolution
+              About Smartech
             </h4>
             <h2 className="font-heading text-4xl lg:text-5xl font-bold text-charcoal mb-8 leading-tight">
-              Automation is Leading the Way. <br/>
-              <span className="text-gray-400">Are you keeping up?</span>
+              FM Software That <br/>
+              <span className="text-gray-400">Actually Works.</span>
             </h2>
             
             <div className="space-y-6 text-gray-600 leading-relaxed text-lg">
               <p>
-                The facility management industry is changing rapidly. With budgets tighter than ever and technology advancing at breakneck speed, the traditional "fix-it-when-it-breaks" model is obsolete.
+                Smartech FM was founded on a simple frustration: too much FM software is built by people who've never run an FM operation. The result? Bloated platforms, enterprise pricing, and tools that don't fit how real teams actually work.
               </p>
               <p>
-                Our approach is driven by <strong>automation and AI</strong>. We deliver optimized solutions designed to drastically minimize your Operating Expenditure (OpEx) while providing the data-driven foresight needed to plan for risk and Capital Expenditure (CapEx). <span className="text-charcoal font-semibold">We ensure no surprises arise.</span>
+                We're different. Smartech was built from inside the industry — by people who've managed facilities, led contracts, and delivered services across complex estates. <span className="text-charcoal font-semibold">We built the tools we wished we'd had.</span>
+              </p>
+              <p>
+                Today, Smartech is a small team by design. That means fast decisions, direct access, and products shaped by people who understand the pressures you're under — not a sales team reading from a script.
               </p>
             </div>
 
@@ -46,8 +49,8 @@ export const About: React.FC = () => {
                   <TrendingDown size={24} />
                 </div>
                 <div>
-                  <h4 className="font-bold text-charcoal">Minimize OpEx</h4>
-                  <p className="text-sm text-gray-500">Streamlined workflows that reduce waste.</p>
+                  <h4 className="font-bold text-charcoal">Practical Pricing</h4>
+                  <p className="text-sm text-gray-500">Enterprise capability without the enterprise cost.</p>
                 </div>
               </div>
               <div className="flex gap-4 items-start">
@@ -55,8 +58,8 @@ export const About: React.FC = () => {
                   <ShieldCheck size={24} />
                 </div>
                 <div>
-                  <h4 className="font-bold text-charcoal">Risk Planning</h4>
-                  <p className="text-sm text-gray-500">Predictive modeling for capital assets.</p>
+                  <h4 className="font-bold text-charcoal">Compliance Built-In</h4>
+                  <p className="text-sm text-gray-500">Evidence, audits, and the golden thread — sorted.</p>
                 </div>
               </div>
               <div className="flex gap-4 items-start">
@@ -64,8 +67,8 @@ export const About: React.FC = () => {
                   <Cpu size={24} />
                 </div>
                 <div>
-                  <h4 className="font-bold text-charcoal">AI-Led Strategy</h4>
-                  <p className="text-sm text-gray-500">Data, not guesswork, drives decisions.</p>
+                  <h4 className="font-bold text-charcoal">Modular by Design</h4>
+                  <p className="text-sm text-gray-500">Start with what you need, expand when ready.</p>
                 </div>
               </div>
               <div className="flex gap-4 items-start">
@@ -73,26 +76,16 @@ export const About: React.FC = () => {
                   <Eye size={24} />
                 </div>
                 <div>
-                  <h4 className="font-bold text-charcoal">Total Transparency</h4>
-                  <p className="text-sm text-gray-500">Full accountability in everyday tasks.</p>
+                  <h4 className="font-bold text-charcoal">Delivery Optional</h4>
+                  <p className="text-sm text-gray-500">Use our tools yourself, or let us deliver for you.</p>
                 </div>
               </div>
             </div>
 
             <div className="mt-12 pt-8 border-t border-gray-100">
-              <p className="text-gray-500 mb-6 italic">
-                "We are industry experts with over 40 years of experience working for private, public, and global players. We don't just manage facilities; we revolutionize them."
+              <p className="text-gray-500 italic">
+                FM software built by FM professionals.
               </p>
-              <div className="flex items-center gap-12">
-                <div>
-                  <span className="block text-5xl font-bold text-primary mb-1">40+</span>
-                  <span className="text-xs text-charcoal font-bold uppercase tracking-wider">Years Experience</span>
-                </div>
-                <div>
-                  <span className="block text-5xl font-bold text-primary mb-1">Global</span>
-                  <span className="text-xs text-charcoal font-bold uppercase tracking-wider">Reach & Impact</span>
-                </div>
-              </div>
             </div>
           </div>
 
@@ -101,3 +94,31 @@ export const About: React.FC = () => {
     </section>
   );
 };
+```
+
+---
+
+## How to Apply These Changes in VS Code
+
+1. Open VS Code with your `Smart-FM-Website` folder
+
+2. Navigate to each file in the `src` folder (likely `src/components/` or similar)
+
+3. For each file:
+   - Open the file (e.g., `Hero.tsx`)
+   - Select All (`Cmd + A`)
+   - Delete
+   - Paste the new code from above
+   - Save (`Cmd + S`)
+
+4. Once all four files are updated, open Terminal in VS Code (`Ctrl + `` `) and run:
+```
+   npm run dev
+```
+   This will start the local dev server so you can preview the changes.
+
+5. When happy, commit and push:
+```
+   git add .
+   git commit -m "Update positioning and copy"
+   git push
