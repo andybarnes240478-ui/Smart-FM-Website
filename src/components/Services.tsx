@@ -42,17 +42,13 @@ interface ServiceCardProps {
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ icon: Icon, title, description }) => (
-  <div className="group relative h-full min-h-[20rem] overflow-hidden bg-charcoal">
-    <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/95 to-charcoal/80 transition-opacity duration-500"></div>
-    
-    <div className="relative h-full p-8 flex flex-col justify-end text-white z-10">
-      <Icon className="w-10 h-10 text-primary mb-6" strokeWidth={1.5} />
-      <h3 className="text-2xl font-heading font-bold mb-3">{title}</h3>
-      <div className="h-1 w-12 bg-primary mb-3"></div>
-      <p className="text-gray-300 text-sm font-medium leading-relaxed max-w-xs">
-        {description}
-      </p>
-    </div>
+  <div className="bg-charcoal p-8 flex flex-col h-full">
+    <Icon className="w-10 h-10 text-primary mb-6" strokeWidth={1.5} />
+    <h3 className="text-xl font-heading font-bold text-white mb-3">{title}</h3>
+    <div className="h-1 w-12 bg-primary mb-4"></div>
+    <p className="text-gray-300 text-sm leading-relaxed flex-grow">
+      {description}
+    </p>
   </div>
 );
 
@@ -63,8 +59,9 @@ interface ServicesProps {
 export const Services: React.FC<ServicesProps> = ({ onNavigate }) => {
   return (
     <section id="services" className="bg-white">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-        <div className="bg-lightgray p-12 md:p-16 flex flex-col justify-center min-h-[20rem]">
+      <div className="grid grid-cols-1 lg:grid-cols-4">
+        {/* Left intro panel - spans 1 column, 2 rows on large screens */}
+        <div className="bg-lightgray p-12 md:p-16 flex flex-col justify-center lg:row-span-2">
           <h2 className="font-heading text-4xl font-bold text-charcoal mb-6">
             Our Expertise
           </h2>
@@ -83,6 +80,8 @@ export const Services: React.FC<ServicesProps> = ({ onNavigate }) => {
             View All Products
           </Button>
         </div>
+        
+        {/* Service cards - 3 columns, 2 rows */}
         {services.map((service, index) => (
           <ServiceCard key={index} {...service} />
         ))}
